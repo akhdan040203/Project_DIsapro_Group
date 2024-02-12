@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- CSS Slick -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- CSS Tailwind -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+<style>
+     /* CSS untuk membuat navbar transparan */
+     nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(4, 12, 93, 0.5); /* Warna latar belakang dengan opasitas */
+            backdrop-filter: blur(10px); /* Efek blur untuk transparansi lebih baik pada background */
+            z-index: 1000; /* Menentukan tingkat kedalaman tumpukan */
+        }
+
+       body {
+        font-family: 'Poppins', sans-serif;
+       } 
+</style>
+</head>
+<body>
+    <nav class="p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <!-- Logo -->
+                <img src="asset/logo 1.png" alt="Company Logo" class="h-8 w-8 mr-2">
+                <span class="text-white font-bold text-lg ">Disapro Group </span>
+            </div>
+
+            <!-- Hamburger Menu (for Mobile) -->
+            <div class="md:hidden">
+                <button id="burgerBtn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center mr-8">
+                <div class="px-2 text-blue font-bold mx-3 text-white">Home</div>
+                <div class="px-2 text-blue font-bold mx-3 text-white">Our Activities</div>
+                <div class="px-2 text-blue font-bold mx-3 text-white">About Us</div>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel Section -->
+    <section class=" mx-auto ">
+        <div class="flex items-center justify-center">
+            <div class="w-full">
+                <!-- Carousel Content -->
+                <div class="relative">
+                    <img src="asset/photo_ke-4.jpeg" alt="Carousel Image" class="w-full h-screen object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-white text-center">
+                           <h1 class="text-6xl font-bold mb-4">Sekolah Digital Center</h1>
+                            <p class="mb-20">By Disapro Group</p> 
+                            <div>
+                            <a href="#" class="bg-yellow-600 text-white rounded-2xl font-bold shadow-lg p-4 px-10 text-lg">Hubungi Sekarang</a>
+                        </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Floating Company Description -->
+    <div class="bg-white rounded-lg shadow-lg p-48 max-w-4xl absolute inset-x-0 mx-auto -mt-24 sm:-mb-28 sm:p-8 sm- text-center sm:px-48 ">
+        <!-- Company Description Content Goes Here -->
+        <h2 class="text-2xl font-semibold mb-4 text-slate-800"><span class="text-blue-900">Tentang</span> <span class="text-yellow-900">Kami</span>     
+        </h2>
+        <p class="text-gray-700 text-md mb-4 text-nowrap">Sekolah Digital center  adalah sebuah perusahaan yang bergerak dibidang Jasa Pelatihan dan Konsultasi Digital Marketing  yang memiliki program-program yang disusun secara khusus  untuk membantu UMKM maupun corporate.</p>
+    </div>
+
+    <section class="container sm:mt-56">
+        <!-- Row 1 -->
+        <div class="bg-white p-16 sm:bg-red mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 md:text-lg">
+            <!-- Column 1 - Text -->
+            <div class="mt-4 md:mt-0">
+                <img src="asset/photo_ke-2.png" alt="Carousel Image" class="w-full object-cover rounded-lg shadow-lg">
+            </div>
+            <div class="mb-4 md:mb-0">  
+              <h2 class="font-bold text-blue-900 text-center mb-4 text-4xl">VISI</h2>
+              <p class="mb-8">&#8226; Memberikan jasa dan konsultan pelatihan serta jasa tenaga kerja yang tepat guna dan berkualitas tinggi Membantu mengembangkan 
+                <br>&#8226; kualitas SDM dengan memberikan pelatihan-pelatihan yang berkualitas dan sesuai dengan perkembangan teknologi serta kebutuhan perusahaan 
+              </p>
+              <div class="mt-14"><a href="" class="p-4 bg-blue-900 rounded-2xl text-white md:mb-10">Info Selengkapnya</a></div> 
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="bg-white p-16 sm:bg-red mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 md:text-lg">
+            <!-- Column 1 - Text -->
+            <div class="mt-4 md:mt-0">
+                <h2 class="font-bold text-yellow-700 text-center mb-4 text-4xl">MISI</h2>
+                <p class="text-gray-700">&#8226; Memberikan jasa dan konsultan pelatihan serta jasa tenaga kerja yang tepat guna dan berkualitas tinggi Membantu mengembangkan 
+                    <br> &#8226; kualitas SDM dengan memberikan pelatihan-pelatihan yang berkualitas dan sesuai dengan perkembangan teknologi serta kebutuhan perusahaan 
+                </p>
+                <div class="mt-12"><a href="" class="p-4 bg-yellow-600 text-white font-semibold rounded-2xl"> Info Selengkapnya </a></div>
+            </div>
+            <!-- Column 2 - Image -->
+            <div class="mt-4 md:mt-0">
+                <img src="asset/photo_ke-3.png" alt="Carousel Image" class="w-full object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-48 container mx-auto">
+        <div class="md:text-4xl">
+            <h2 class="font-bold text-center"> <span class="text-blue-800">Our </span><span class="text-yellow-700">Activity</span>
+            </span></h2>
+        </div>
+  <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-24 text-white text-center justify-center">
+    <!-- Row 1 -->
+    <div class="bg-blue-900 p-4 shadow-md rounded-lg"><h2 class="text-2xl font-bold">Publisher
+</h2>
+      <p class="mt-4">pemimpin yang ngurusin semuanya terkait buku atau majalah. Dia pilih karya yang bagus, atur kontrak dengan penulis, urus desain dan produksi, pikirin cara biar bukunya laku di pasaran, dan kelola distribusi ke toko-toko.  </p>
+    </div>
+    <!-- Row 2 -->
+    <div class="bg-yellow-600 p-4 shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold">Konten Kreator</h2>
+      <p class="mt-4">Seorang profesional konten, sering disebut juga sebagai content creator atau content marketer,  bertanggung jawab  untuk membuat dan mengelola berbagai jenis konten untuk tujuan pemasaran atau komunikasi.</p>
+    </div>
+    <div class="bg-blue-900 p-4 shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold">CSO/CO</h2>
+      <p class="mt-4">CSO atau Chief Security Officer adalah orang yang bertanggung jawab penuh atas keamanan dalam sebuah perusahaan. Tugasnya melibatkan beberapa hal, seperti melindungi informasi penting.</p>
+     
+    </div>
+    <!-- Row 3 -->
+    <div class="bg-yellow-600 p-4 shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold">Programer</h2>
+      <p class="mt-4">Seorang programmer, atau pengembang perangkat lunak, memiliki tugas-tugas utama dalam menciptakan, mengembangkan, dan memelihara perangkat lunak atau aplikasi</p>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="bg-blue-900 p-4 shadow-md rounded-lg ">
+        <h2 class="text-2xl font-semibold">Web Design</h2>
+      <p class="mt-4">Seorang desainer web di perusahaan properti memiliki tanggung jawab utama dalam menciptakan dan merancang pengalaman online yang menarik dan informatif untuk calon pembeli atau penyewa properti.</p>
+    </div>
+    </div>
+    </section>
+<section class="bg-gray-300 flex justify-center items-center mt-28 h-full">
+<div class="text-4xl mb-8">
+    <h2 class="font-bold text-blue-800  text-center mt-28">Pathership</h2>
+        <div class="grid grid-cols-7 grid-rows-3 gap-4 mt-20 ">
+        <div class="logo"><img src="asset/2.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/3.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/4.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/5.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/6.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/7.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/8.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/9.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/10.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/11.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/12.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/13.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/14.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+        <div class="logo"><img src="asset/15.png" alt="" width="180px" height="180px" class="rounded-xl shadow-lg"></div>
+      </div>
+    </div>
+    </section>
+    <div class="container mx-auto mt-32 text-center text-white">
+        <div class="text-4xl font-bold">
+      <h2 class="text-yellow-800">Testimoni</h2>
+        </div>
+        <div class="slick-carousel mt-14">
+            <div class="p-4">
+                <div class="bg-blue-900 shadow-lg p-28 rounded-md">
+                    <h2 class="font-semibold mb-10 text-2xl ">Akhdan</h2>
+                    <p class="text-white text-wrap">Saya merasa sangat beruntung dapat mengikuti magang di PT Disapro Grup dalam bidang Digital Marketing, terutama di sektor properti. Pengalaman ini memberikan wawasan yang sangat berharga tentang dunia pemasaran digital, terutama dalam mengelola kampanye pemasaran untuk proyek-proyek properti mereka.</p>
+                    <div class="text-center mt-6 flex justify-center">
+                        <span class="flex flex-row-reverse">
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                          
+                        </span>
+                      </div>
+                </div>
+            </div>
+
+            <div class="p-4">
+                <div class=" bg-yellow-800 shadow-lg p-28 rounded-md">
+                    <h2 class="font-semibold mb-10 text-2xl">Dede Inoen</h2>
+                    <p class="text-white text-wrap">Pengalaman magang saya di PT Disapro Grup sungguh luar biasa. Saya mendapatkan kesempatan untuk terlibat langsung dalam strategi pemasaran online, termasuk pengelolaan konten sosial media dan kampanye iklan untuk proyek-proyek properti yang menarik.</p>
+                    <div class="text-center flex justify-center mt-6">
+                        <span class="flex flex-row-reverse">
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                          
+                        </span>
+                      </div>
+                </div>
+            </div>
+    
+            <div class="p-4">
+                <div class="bg-blue-900 shadow-lg  p-28 rounded-md">
+                    <h2 class="font-semibold mb-10 text-2xl">Novan Bahar</h2>
+                    <p class="text-white text-wrap">Saya ingin berterima kasih kepada PT Disapro Grup atas kesempatan magang yang luar biasa ini. Dalam waktu singkat, saya dapat memahami dinamika industri properti dan bagaimana strategi pemasaran digital dapat memberikan dampak besar.</p>
+                    <div class="text-center flex justify-center mt-6">
+                        <span class="flex flex-row-reverse">
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                          
+                        </span>
+                      </div>
+                </div>
+            </div>
+    
+            <div class="p-4">
+                <div class="bg-yellow-800 shadow-lg  p-28 rounded-md">
+                    <h2 class="font-semibold mb-10 text-2xl">Novan Panci</h2>
+                    <p class="text-white text-wrap">Magang di PT Disapro Grup membuka mata saya terhadap dunia digital marketing di industri properti. Bekerja dengan tim yang berpengalaman dan berkomitmen membuat pengalaman saya menjadi berharga dan membantu memperluas pengetahuan saya.</p>
+                    <div class="text-center flex justify-center mt-6">
+                        <span class="flex flex-row-reverse">
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                          
+                        </span>
+                      </div>
+            </div>
+            </div>
+            <div class="p-4">
+                <div class="bg-blue-900 shadow-lg  p-28 rounded-md">
+                    <h2 class="font-semibold mb-10 text-2xl">Rani</h2>
+                    <p class="text-white text-wrap">Pengalaman magang di PT Disapro Grup adalah langkah awal yang hebat untuk memahami strategi pemasaran digital. Saya belajar banyak tentang pengelolaan kampanye iklan dan bagaimana membuat konten yang menarik untuk proyek properti.</p>
+                    <div class="text-center flex justify-center mt-6">
+                        <span class="flex flex-row-reverse">
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                        </span>
+                      </div>   
+                </div>
+            </div>
+    
+            <div class="p-4">
+                <div class="bg-yellow-800 shadow-lg  p-28 rounded-md ">
+                    <img src="asset/ikbal_photo_ke_2.jpg" alt="" class="object-cover mx-auto">
+                    <h2 class="font-semibold mb-10 text-2xl">Nami</h2>
+                    <p class="text-white text-wrap">Saya sangat senang dapat mengikuti magang di PT Disapro Grup. Tim yang ramah dan proaktif memberikan dukungan penuh dalam memahami strategi pemasaran digital yang efektif, terutama dalam konteks properti.</p>
+                    <div class="text-center flex justify-center mt-6">
+                        <span class="flex flex-row-reverse">
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                        </span>
+                      </div>    
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="bg-blue-900 shadow-lg  p-28 rounded-md">
+                    <h2 class="font-semibold mb-10 text-2xl">Putri</h2>
+                    <p class="text-white text-wrap">Magang di PT Disapro Grup memberikan pemahaman mendalam tentang pengelolaan kampanye digital di sektor properti. Saya sangat bersyukur atas pengalaman berharga ini dan berterima kasih kepada tim yang telah membimbing dengan baik.</p>
+                    <div class="text-center flex justify-center mt-6">
+                        <span class="flex flex-row-reverse">
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                          
+                        </span>
+                      </div>
+                </div>
+            </div>
+    
+            <div class="p-4">
+                <div class="bg--800 shadow-lg  p-28 rounded-md bg-yellow-900">
+                    <h2 class="font-semibold mb-10 text-2xl">Sumanto Yanto</h2>
+                    <p class="text-white text-wrap">Saya merasa terhormat dapat mengikuti magang di PT Disapro Grup. Pengalaman ini membantu saya mengasah keterampilan dalam pemasaran digital, terutama dalam konteks industri properti yang dinamis.</p>
+                    <div class="text-center flex justify-center mt-6">
+                        <span class="flex flex-row-reverse">
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                    
+                          <svg class="text-yellow-400 cursor-pointer peer peer-hover:text-yellow-400 hover:text-yellow-400 duration-100 " width="34" height="34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                          </svg>
+                        </span>
+                </div>
+            </div>
+    
+        </div>
+      </div>
+        <section class="container mx-auto mt-8">
+            <!-- Konten Utama (Peta dan Card Foto) -->
+        </section>
+    <section class="bg-gray-900">
+        <footer class=" text-white py-10 px-16">
+            <div class="container mx-auto flex justify-between items-center">
+                <div>
+                    <p>085223936581</p>
+                    <p>Jl. Pasirjati Endah No.80, Jatiendah, Kec. Cilengkrang, Kabupaten Bandung, Jawa Barat 40616</p>
+                </div>
+                <div>
+                    <!-- Logo Disapro Group -->
+                    <img src="asset/logo 1.png" alt="Disapro Group Logo" class="h-10">
+                  </div>
+                      <div>
+                    <p>&copy; 2024 By Disapro Group</p>
+                </div>  
+        </footer>
+      </section>
+</body>
+<!-- !-- Script to Toggle Hamburger Menu Content -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Slick Carousel JS -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.slick-carousel').slick({
+            dots: false, // Menampilkan tombol navigasi titik
+            infinite: true, // Mengaktifkan mode loop
+            speed: 500, // Kecepatan transisi
+            slidesToShow: 1, // Jumlah gambar yang ditampilkan pada satu waktu
+            slidesToScroll: 1, // Jumlah gambar yang digulirkan pada setiap klik navigasi
+            autoplay: true, // Menjalankan carousel otomatis
+            autoplaySpeed: 2000 // Kecepatan autoplay dalam milidetik
+        });
+    });
+</script>
+
+        <script>
+            document.getElementById('burgerBtn').addEventListener('click', function () {
+                document.getElementById('burgerMenu').classList.toggle('hidden');
+            });
+
+            
+        </script>
+</html>
